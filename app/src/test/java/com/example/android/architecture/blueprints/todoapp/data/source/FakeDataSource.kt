@@ -18,7 +18,10 @@ class FakeDataSource(var tasks: MutableList<Task>? = mutableListOf()) : TasksDat
     }
 
     override suspend fun getTasks(): Result<List<Task>> {
-        TODO("Not yet implemented")
+        tasks?.let { return Result.Success(it) }
+        return Result.Error(
+            Exception("Tasks not found")
+        )
     }
 
     override suspend fun refreshTasks() {
@@ -30,7 +33,7 @@ class FakeDataSource(var tasks: MutableList<Task>? = mutableListOf()) : TasksDat
     }
 
     override suspend fun getTask(taskId: String): Result<Task> {
-        TODO("Not yet implemented")
+        return Result.Error(Exception("Test"))
     }
 
     override suspend fun refreshTask(taskId: String) {
