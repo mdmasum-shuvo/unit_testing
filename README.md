@@ -1,4 +1,4 @@
-TO-DO Notes - Code for Testing
+TO-DO Notes - 
 ============================================================================
 
 Code for the Advanced Android Kotlin Testing Codelab 5.1-5.3
@@ -9,6 +9,7 @@ Introduction
 TO-DO Notes is an app where you to write down tasks to complete. The app displays them in a list.
 You can then mark them as completed or not, filter them and delete them.
 
+![App main screen, screenshot](screenshot.png)
 
 The codelabs in this series are:
 * [Testing Basics](https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-basics)
@@ -27,3 +28,4 @@ You should be familiar with:
   [Navigation Component](https://developer.android.com/guide/navigation) and 
   [Data Binding](https://developer.android.com/topic/libraries/data-binding).
 * Application architecture, following the pattern from the [Guide to app architecture](https://developer.android.com/jetpack/docs/guide) and [Android Fundamentals codelabs](https://developer.android.com/courses/kotlin-android-fundamentals/toc).
+
